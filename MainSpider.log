@@ -3346,3 +3346,1047 @@ TypeError: can only concatenate str (not "list") to str
  'scheduler/enqueued/memory': 1,
  'start_time': datetime.datetime(2022, 6, 24, 20, 14, 53, 420380)}
 2022-06-25 05:14:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 11:53:57 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 11:53:57 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 11:53:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 11:53:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 11:53:57 [scrapy.extensions.telnet] INFO: Telnet Password: c1ed834bf8c2aa3d
+2022-06-25 11:53:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 11:53:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 11:53:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 11:53:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 11:53:57 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 11:53:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 11:53:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 11:53:58 [filelock] DEBUG: Attempting to acquire lock 2293017407216 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 11:53:58 [filelock] DEBUG: Lock 2293017407216 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 11:53:58 [filelock] DEBUG: Attempting to release lock 2293017407216 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 11:53:58 [filelock] DEBUG: Lock 2293017407216 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 11:53:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=1> (referer: None)
+2022-06-25 11:53:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 11:53:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 354,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 29530,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.049534,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 2, 53, 58, 547236),
+ 'httpcompression/response_bytes': 220754,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 6, 25, 2, 53, 57, 497702)}
+2022-06-25 11:53:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 12:32:25 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 12:32:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 12:32:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 12:32:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 12:32:25 [scrapy.extensions.telnet] INFO: Telnet Password: 4217bfea429f1616
+2022-06-25 12:32:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 12:32:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 12:32:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 12:32:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 12:32:25 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 12:32:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 12:32:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 12:32:26 [filelock] DEBUG: Attempting to acquire lock 1715389045232 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:32:26 [filelock] DEBUG: Lock 1715389045232 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:32:26 [filelock] DEBUG: Attempting to release lock 1715389045232 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:32:26 [filelock] DEBUG: Lock 1715389045232 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=9> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=7> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=8> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=6> (referer: None)
+2022-06-25 12:32:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=9> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=7> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=8> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=6> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=11> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=13> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=14> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=12> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=15> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=16> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=11> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=13> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=14> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=12> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=15> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=16> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=17> (referer: None)
+2022-06-25 12:32:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=17> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=20> (referer: None)
+2022-06-25 12:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=21> (referer: None)
+2022-06-25 12:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=18> (referer: None)
+2022-06-25 12:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=19> (referer: None)
+2022-06-25 12:32:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=10> (referer: None)
+2022-06-25 12:32:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=20> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=21> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=18> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=19> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=10> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 36, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 12:32:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 12:32:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7840,
+ 'downloader/request_count': 20,
+ 'downloader/request_method_count/GET': 20,
+ 'downloader/response_bytes': 469520,
+ 'downloader/response_count': 20,
+ 'downloader/response_status_count/200': 20,
+ 'elapsed_time_seconds': 2.366158,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 3, 32, 28, 431020),
+ 'httpcompression/response_bytes': 3219413,
+ 'httpcompression/response_count': 20,
+ 'log_count/DEBUG': 25,
+ 'log_count/ERROR': 18,
+ 'log_count/INFO': 10,
+ 'response_received_count': 20,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'spider_exceptions/IndexError': 18,
+ 'start_time': datetime.datetime(2022, 6, 25, 3, 32, 26, 64862)}
+2022-06-25 12:32:28 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 12:36:18 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 12:36:18 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 12:36:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 12:36:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 12:36:18 [scrapy.extensions.telnet] INFO: Telnet Password: aa4390bf2e97fabf
+2022-06-25 12:36:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 12:36:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 12:36:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 12:36:18 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 12:36:18 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 12:36:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 12:36:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 12:36:19 [filelock] DEBUG: Attempting to acquire lock 2908544134128 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:36:19 [filelock] DEBUG: Lock 2908544134128 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:36:19 [filelock] DEBUG: Attempting to release lock 2908544134128 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:36:19 [filelock] DEBUG: Lock 2908544134128 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 12:36:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=9> (referer: None)
+2022-06-25 12:36:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=4> (referer: None)
+2022-06-25 12:36:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=6> (referer: None)
+2022-06-25 12:36:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=8> (referer: None)
+2022-06-25 12:36:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=3> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=7> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=13> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=5> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=14> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=2> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=11> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=10> (referer: None)
+2022-06-25 12:36:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=12> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=15> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=16> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=17> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=18> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=19> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=20> (referer: None)
+2022-06-25 12:36:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&recruit&Page_No=21> (referer: None)
+2022-06-25 12:36:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 12:36:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7644,
+ 'downloader/request_count': 20,
+ 'downloader/request_method_count/GET': 20,
+ 'downloader/response_bytes': 641835,
+ 'downloader/response_count': 20,
+ 'downloader/response_status_count/200': 20,
+ 'elapsed_time_seconds': 11.517575,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 3, 36, 30, 507483),
+ 'httpcompression/response_bytes': 5185419,
+ 'httpcompression/response_count': 20,
+ 'log_count/DEBUG': 25,
+ 'log_count/INFO': 10,
+ 'response_received_count': 20,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'start_time': datetime.datetime(2022, 6, 25, 3, 36, 18, 989908)}
+2022-06-25 12:36:30 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 12:58:43 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 12:58:43 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 12:58:43 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 12:58:43 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 12:58:43 [scrapy.extensions.telnet] INFO: Telnet Password: 8d1c7f8c41463fbc
+2022-06-25 12:58:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2022-06-25 12:58:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 12:58:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 12:58:44 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 12:58:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 12:59:50 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 12:59:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 1 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 12:59:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 2 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 12:59:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 3 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 13:00:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 1 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 13:00:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 2 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 13:00:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET file:///%2A%5B%40id%3D%22content%22%5D/div/div/div%5B1%5D/div/div%5B2%5D/div%5B2%5D/div/div%5B1%5D/ul/li%5B1%5D/div/div%5B2%5D/a/text%28%29> (failed 3 times): [Errno 22] Invalid argument: '\\*[@id="content"]\\div\\div\\div[1]\\div\\div[2]\\div[2]\\div\\div[1]\\ul\\li[1]\\div\\div[2]\\a\\text()'
+2022-06-25 13:00:34 [filelock] DEBUG: Attempting to acquire lock 1584513907248 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:00:34 [filelock] DEBUG: Lock 1584513907248 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:00:34 [filelock] DEBUG: Attempting to release lock 1584513907248 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:00:34 [filelock] DEBUG: Lock 1584513907248 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:00:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%EA%B0%9C%EB%B0%9C&careerType=2&careerMin=1&careerMax=10&edu=0&payType=1&payMin=2000&payMax=5000&tabType=recruit&Page_No=3> (referer: None)
+2022-06-25 13:01:52 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 13:01:52 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 13:01:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 13:01:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 13:01:52 [scrapy.extensions.telnet] INFO: Telnet Password: 88ce8a9fd804f30d
+2022-06-25 13:01:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 13:01:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 13:01:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 13:01:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 13:01:52 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 13:01:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 13:01:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 13:01:53 [filelock] DEBUG: Attempting to acquire lock 1804806629088 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:01:53 [filelock] DEBUG: Lock 1804806629088 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:01:53 [filelock] DEBUG: Attempting to release lock 1804806629088 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:01:53 [filelock] DEBUG: Lock 1804806629088 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=7> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=7> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=8> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-25 13:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=13> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=8> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=13> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=11> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=6> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=12> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=10> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=9> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=14> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=15> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=16> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=11> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=6> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=12> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=10> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=9> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=14> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=15> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=16> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=17> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=22> (referer: None)
+2022-06-25 13:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=19> (referer: None)
+2022-06-25 13:01:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=17> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=22> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=19> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=20> (referer: None)
+2022-06-25 13:01:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=20> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=21> (referer: None)
+2022-06-25 13:01:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=21> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=18> (referer: None)
+2022-06-25 13:01:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=18> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:01:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 13:01:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8382,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 491780,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'elapsed_time_seconds': 4.009894,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 4, 1, 56, 596345),
+ 'httpcompression/response_bytes': 3372042,
+ 'httpcompression/response_count': 21,
+ 'log_count/DEBUG': 26,
+ 'log_count/ERROR': 19,
+ 'log_count/INFO': 10,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'spider_exceptions/IndexError': 19,
+ 'start_time': datetime.datetime(2022, 6, 25, 4, 1, 52, 586451)}
+2022-06-25 13:01:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 13:03:33 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 13:03:33 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 13:03:33 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 13:03:33 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 13:03:33 [scrapy.extensions.telnet] INFO: Telnet Password: 68ad832b03ec93c8
+2022-06-25 13:03:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 13:03:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 13:03:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 13:03:33 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 13:03:33 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 13:03:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 13:03:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 13:03:34 [filelock] DEBUG: Attempting to acquire lock 2701380696864 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:03:34 [filelock] DEBUG: Lock 2701380696864 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:03:34 [filelock] DEBUG: Attempting to release lock 2701380696864 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:03:34 [filelock] DEBUG: Lock 2701380696864 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-25 13:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-25 13:03:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-25 13:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-25 13:03:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:03:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 13:03:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1416,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 106958,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 1.492386,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 4, 3, 35, 513837),
+ 'httpcompression/response_bytes': 773255,
+ 'httpcompression/response_count': 4,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2022, 6, 25, 4, 3, 34, 21451)}
+2022-06-25 13:03:35 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 13:05:21 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 13:05:21 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 13:05:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 13:05:21 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 13:05:21 [scrapy.extensions.telnet] INFO: Telnet Password: 1d443d2ac54d1477
+2022-06-25 13:05:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 13:05:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 13:05:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 13:05:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 13:05:21 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 13:05:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 13:05:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 13:05:22 [filelock] DEBUG: Attempting to acquire lock 1996695075712 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:05:22 [filelock] DEBUG: Lock 1996695075712 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:05:22 [filelock] DEBUG: Attempting to release lock 1996695075712 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:05:22 [filelock] DEBUG: Lock 1996695075712 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 13:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-25 13:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-25 13:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-25 13:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-25 13:05:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:05:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 13:05:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 13:05:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1416,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 107048,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 1.993275,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 4, 5, 24, 49131),
+ 'httpcompression/response_bytes': 773179,
+ 'httpcompression/response_count': 4,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2022, 6, 25, 4, 5, 22, 55856)}
+2022-06-25 13:05:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-25 14:11:53 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-25 14:11:53 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-25 14:11:53 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-25 14:11:53 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-25 14:11:53 [scrapy.extensions.telnet] INFO: Telnet Password: f7a253b66c7df9ed
+2022-06-25 14:11:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-25 14:11:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-25 14:11:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-25 14:11:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-25 14:11:53 [scrapy.core.engine] INFO: Spider opened
+2022-06-25 14:11:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-25 14:11:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-25 14:11:53 [filelock] DEBUG: Attempting to acquire lock 1457709728864 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 14:11:53 [filelock] DEBUG: Lock 1457709728864 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 14:11:53 [filelock] DEBUG: Attempting to release lock 1457709728864 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 14:11:53 [filelock] DEBUG: Lock 1457709728864 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-25 14:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-25 14:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-25 14:11:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 14:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-25 14:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-25 14:11:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-25 14:11:55 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-25 14:11:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1416,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 107115,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 1.957508,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 5, 11, 55, 260562),
+ 'httpcompression/response_bytes': 776248,
+ 'httpcompression/response_count': 4,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2022, 6, 25, 5, 11, 53, 303054)}
+2022-06-25 14:11:55 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-06-26 02:22:01 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-06-26 02:22:01 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-06-26 02:22:01 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Fighting',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'MainSpider.log',
+ 'NEWSPIDER_MODULE': 'Fighting.spiders',
+ 'SPIDER_MODULES': ['Fighting.spiders']}
+2022-06-26 02:22:01 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-06-26 02:22:01 [scrapy.extensions.telnet] INFO: Telnet Password: 3d79270d94258a1d
+2022-06-26 02:22:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-26 02:22:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-26 02:22:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-26 02:22:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-06-26 02:22:01 [scrapy.core.engine] INFO: Spider opened
+2022-06-26 02:22:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-26 02:22:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-26 02:22:01 [filelock] DEBUG: Attempting to acquire lock 2500450534688 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-26 02:22:02 [filelock] DEBUG: Lock 2500450534688 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-26 02:22:02 [filelock] DEBUG: Attempting to release lock 2500450534688 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-26 02:22:02 [filelock] DEBUG: Lock 2500450534688 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-06-26 02:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+2022-06-26 02:22:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=5> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-26 02:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
+2022-06-26 02:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+2022-06-26 02:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
+2022-06-26 02:22:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=6&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=4> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\spiders\MainSpider.py", line 39, in parse
+    COMPANY = response.xpath(f'//*[@id="content"]/div/div/div[1]/div/div[2]/div[2]/div/div[1]/ul/li[{y}]/div/div[1]/a/text()')[0].extract()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2022-06-26 02:22:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-26 02:22:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1416,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 107569,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 1.410349,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 25, 17, 22, 2, 994025),
+ 'httpcompression/response_bytes': 773482,
+ 'httpcompression/response_count': 4,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2022, 6, 25, 17, 22, 1, 583676)}
+2022-06-26 02:22:02 [scrapy.core.engine] INFO: Spider closed (finished)
