@@ -7,6 +7,13 @@ import scrapy
 
 
 class FightingItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    COMPANY = scrapy.Field()
+    TITLE = scrapy.Field()
+    CARRER = scrapy.Field()
+    ACADEMIC_ABILILTY = scrapy.Field()
+    EMPLOYMENT_TYPE = scrapy.Field()
+    AREA = scrapy.Field()
+    #RECUITMENT_TYPE = scrapy.Field()
+    RECUITMENT_PERIOD = scrapy.Field()
+    OTHER_CONTENTS = scrapy.Field()
+    URL = scrapy.Field()
