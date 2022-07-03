@@ -17,3 +17,4 @@ class FightingItem(scrapy.Item):
     RECUITMENT_PERIOD = scrapy.Field()
     OTHER_CONTENTS = scrapy.Field()
     URL = scrapy.Field()
+    pass

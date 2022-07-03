@@ -1,19 +1,38 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from twisted.enterprise import adbapi
-import datetime
-import logging
-import MySQLdb.cursors
-from scrapy.exceptions import DropItem
-from Fighting.items import FightingItem
+# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+# useful for handling different item types with a single interface
+
+from itemadapter import ItemAdapter
+import pymysql
 import sys
 
-class FightingPipeline:
+class FightingPipeline(object):
+
+    def __init__(self):
+        try:
+            self.conn = pymysql.connect(
+                user = "root",
+                password = '12345678',
+                host = 'reset.cph9j6ogf7eh.us-west-1.rds.amazonaws.com',
+                port = 3306,
+                db = "CLDB",
+                charset = "utf8"
+            )
+            print("DB connected")
+        except pymysql.Error as e:
+            print(f"Error connecting to pymysql Platform: {e}")
+            sys.exit(1)
+        self.cursor = self.conn.cursor()
+
     def process_item(self, item, spider):
+        sql = "INSERT INTO data (COMPANY, TITLE, career, ACADEMIC, EMPLOYMENT, AREA, PERIOD, etc, URL) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
+        self.conn.commit()
+        print("DB inserted")
         return item
 
 

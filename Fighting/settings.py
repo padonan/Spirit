@@ -23,9 +23,13 @@ LOG_FILE = 'MainSpider.log'
 
 FEED_EXPORT_ENCODING = "utf-8-sig"
 
-# ITEM_PIPELINES = {
-#     # 'Fighting.pipelines.Fighting_DBPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'Fighting.pipelines.FightingPipeline': 300
+}
+
+
+
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

@@ -31,7 +31,7 @@ class MainSpider(scrapy.Spider):
     start_urls = [URL % start_page]
 
     def start_requests(self):
-        for i in range(1, 5, 1): # 0, 1
+        for i in range(1, 3, 1): # 0, 1
             yield Request(url=URL % (i + start_page), callback=self.parse) # 콜백 함수를 이용해 페이지별로 크롤링
 
 
