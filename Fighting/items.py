@@ -7,6 +7,7 @@ import scrapy
 
 
 class FightingItem(scrapy.Item):
+    HOMEPAGE = scrapy.Field()
     COMPANY = scrapy.Field()
     TITLE = scrapy.Field()
     CARRER = scrapy.Field()

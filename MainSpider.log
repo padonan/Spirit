@@ -1,18 +1,18 @@
-2022-06-30 20:27:01 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
-2022-06-30 20:27:01 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
-2022-06-30 20:27:01 [scrapy.crawler] INFO: Overridden settings:
+2022-07-08 01:10:15 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Fighting)
+2022-07-08 01:10:15 [scrapy.utils.log] INFO: Versions: lxml 4.9.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.19044-SP0
+2022-07-08 01:10:15 [scrapy.crawler] INFO: Overridden settings:
 {'BOT_NAME': 'Fighting',
  'FEED_EXPORT_ENCODING': 'utf-8-sig',
  'LOG_FILE': 'MainSpider.log',
  'NEWSPIDER_MODULE': 'Fighting.spiders',
  'SPIDER_MODULES': ['Fighting.spiders']}
-2022-06-30 20:27:01 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
-2022-06-30 20:27:01 [scrapy.extensions.telnet] INFO: Telnet Password: 7c07b7d1c3b0de59
-2022-06-30 20:27:01 [scrapy.middleware] INFO: Enabled extensions:
+2022-07-08 01:10:15 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-07-08 01:10:15 [scrapy.extensions.telnet] INFO: Telnet Password: 5c16715a086d59c1
+2022-07-08 01:10:15 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.logstats.LogStats']
-2022-06-30 20:27:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2022-07-08 01:10:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -24,457 +24,378 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2022-06-30 20:27:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+2022-07-08 01:10:16 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2022-06-30 20:27:02 [scrapy.middleware] INFO: Enabled item pipelines:
+2022-07-08 01:10:16 [scrapy.middleware] INFO: Enabled item pipelines:
 ['Fighting.pipelines.FightingPipeline']
-2022-06-30 20:27:02 [scrapy.core.engine] INFO: Spider opened
-2022-06-30 20:27:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2022-06-30 20:27:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
-2022-06-30 20:27:03 [filelock] DEBUG: Attempting to acquire lock 2450481007920 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
-2022-06-30 20:27:03 [filelock] DEBUG: Lock 2450481007920 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
-2022-06-30 20:27:03 [filelock] DEBUG: Attempting to release lock 2450481007920 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
-2022-06-30 20:27:03 [filelock] DEBUG: Lock 2450481007920 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
-2022-06-30 20:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3> (referer: None)
-2022-06-30 20:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '대전 유성구',
- 'CARRER': '경력',
- 'COMPANY': '딱플㈜',
+2022-07-08 01:10:16 [scrapy.core.engine] INFO: Spider opened
+2022-07-08 01:10:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-07-08 01:10:16 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-07-08 01:10:16 [filelock] DEBUG: Attempting to acquire lock 2162846677216 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-08 01:10:16 [filelock] DEBUG: Lock 2162846677216 acquired on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-08 01:10:16 [filelock] DEBUG: Attempting to release lock 2162846677216 on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-08 01:10:16 [filelock] DEBUG: Lock 2162846677216 released on C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-08 01:10:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2> (referer: None)
+2022-07-08 01:10:16 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강남구 외',
+ 'CARRER': '신입',
+ 'COMPANY': '누리꿈소프트㈜',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '모바일App, HTML, Java, mHTML, php, Python, 아이폰, 안드로이드, '
-                   'ActiveX, Java, Python',
- 'RECUITMENT_PERIOD': '~07/21(목)',
- 'TITLE': 'WEB APP개발 팀원 지원해주세요\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38166512?Oem_Code=C1&logpath=1&stext=파이썬&listno=41'}
-2022-06-30 20:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 성남시',
- 'CARRER': '신입·경력',
- 'COMPANY': '㈜이아커뮤니케이션',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'JAVASCRIPT 개발, BigData, Java, Python',
+ 'RECUITMENT_PERIOD': '~08/06(토)',
+ 'TITLE': '[신입]빅데이터 플랫폼 개발 및 운영인력을 구인합니다(python,javascript 교육이수)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38979690?Oem_Code=C1&logpath=1&stext=파이썬&listno=21'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '행복쇼핑 주식회사',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, 웹프로그래머, MySQL, php, Python',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '쇼핑몰, 데이터베이스, DBA, MySQL, 웹프로그래머, APM, Java, php, Python, '
+                   '안드로이드, API, Java, Linux, Python',
+ 'RECUITMENT_PERIOD': '~08/01(월)',
+ 'TITLE': 'REACT/PHP/PYTHON/퍼블리셔/소프트웨어 품질 엔지니어(QA)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38974696?Oem_Code=C1&logpath=1&stext=파이썬&listno=22'}
+2022-07-08 01:10:16 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 중구',
+ 'CARRER': '경력6년↑',
+ 'COMPANY': '㈜제이투이',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': ', SI, 프리랜서, SI, Python, Python',
  'RECUITMENT_PERIOD': '~07/13(수)',
- 'TITLE': '웹프로그래머를 모십니다\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38076759?Oem_Code=C1&logpath=1&stext=파이썬&listno=42'}
-2022-06-30 20:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2> (referer: None)
-2022-06-30 20:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 구로구',
- 'CARRER': '경력1년↑',
- 'COMPANY': '오픈포맷㈜',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, CRM, Python, 소프트웨어',
+ 'TITLE': '[Python SI 시청] 손익 및 리스크 관리 시스템 구축 Python 5개월, Python 개발 Python 분석 '
+          'Python 중급 Python 프리랜서 Python 시청 을지로 광화문 동대문......(5)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38971636?Oem_Code=C1&logpath=1&stext=파이썬&listno=23'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:16 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '경기 용인시 외',
+ 'CARRER': '경력10년↑',
+ 'COMPANY': '㈜아이티사람들',
+ 'EMPLOYMENT_TYPE': '계약직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'NODE.JS, SI, 웹프로그래머, Java, Python, 응용프로그래머, Java',
  'RECUITMENT_PERIOD': '~07/11(월)',
- 'TITLE': '풀스택 개발자 (Fullstack Developer) / 경력\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38041820?Oem_Code=C1&logpath=1&stext=파이썬&listno=43'}
-2022-06-30 20:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 부천시',
- 'CARRER': '경력2년↑',
- 'COMPANY': '제이앤와이(J&Y) 코퍼레이션',
+ 'TITLE': '[ 초긴급,,, (Java & Node.JS & Python)개발자 - 기흥 or 잠실역 ]\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38969330?Oem_Code=C1&logpath=1&stext=파이썬&listno=24'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '전북 전주시',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '마스팜',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'Python, VisualC, VisualC++, 소프트웨어',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': 'ES COMPANY 개발&리버싱 분석 부분별 신입/경력 채용모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38036018?Oem_Code=C1&logpath=1&stext=파이썬&listno=44'}
-2022-06-30 20:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '데이터베이스, 웹프로그래머, Java, jsp, Python, SQL, Python, 인공지능(AI), '
+                   '머신러닝(ML), 딥러닝, tensorflow',
+ 'RECUITMENT_PERIOD': '~10/03(월)',
+ 'TITLE': 'AI기반 3세대 스마트팜 플랫폼 자바로직/',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38954306?Oem_Code=C1&logpath=1&stext=파이썬&listno=25'}
+2022-07-08 01:10:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 송파구',
- 'CARRER': '신입·경력',
- 'COMPANY': '엘세븐시큐리티',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜액스',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '보안소프트웨어, 정보보안, Python, 인공지능(AI), 빅데이터, 머신러닝(ML), 딥러닝',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'AWS, API 연동, FLASK, GIT, nginx, TDD, uwsgi, B2B SaaS '
+                   '소프트웨어, 소프트웨어개발, Python, SQL',
  'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '딥러닝을 통한 인공지능 솔루션 개발자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38647816?Oem_Code=C1&logpath=1&stext=파이썬&listno=21'}
-2022-06-30 20:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
+ 'TITLE': '백엔드 개발자(Python)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38950449?Oem_Code=C1&logpath=1&stext=파이썬&listno=26'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜로제타텍',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '솔루션, Python, 머신러닝(ML), 딥러닝, R, 데이터분석',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': 'AI(머신러닝, 딥러닝)기반 R/Python 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38941654?Oem_Code=C1&logpath=1&stext=파이썬&listno=27'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 금천구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '하몬소프트',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, NI, Java, Linux, Python',
+ 'RECUITMENT_PERIOD': '~08/03(수)',
+ 'TITLE': 'S/W 서버엔진개발자 채용 (JAVA, PYTHON)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38938425?Oem_Code=C1&logpath=1&stext=파이썬&listno=28'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 용산구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜지지옥션',
+ 'EMPLOYMENT_TYPE': '계약직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '인터넷경매, 인터넷부동산, MS-SQL, C#, Python, VisualBasic',
+ 'RECUITMENT_PERIOD': '~07/24(일)',
+ 'TITLE': 'C#, Python, VB 응용 프로그래머를 모집합니다.\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38933373?Oem_Code=C1&logpath=1&stext=파이썬&listno=29'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 구로구 외',
+ 'CARRER': '경력',
+ 'COMPANY': '㈜인라이플',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'django, FLASK, 모바일앱개발, 소프트웨어개발, 솔루션, asp, WAS, AJAX, Java, '
+                   'Python, API, Java, Python, Python, 인공지능(AI), 빅데이터, '
+                   '머신러닝(ML), 데이터분석',
+ 'RECUITMENT_PERIOD': '~08/03(수)',
+ 'TITLE': '[주4.5일근무] Python 개발직무 경력 채용\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38932198?Oem_Code=C1&logpath=1&stext=파이썬&listno=30'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강남구',
+ 'CARRER': '신입·경력2년↑',
+ 'COMPANY': '㈜컨셉터스',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '백엔드, 자바스트립트, Java·JSP, 모바일앱개발, 소프트웨어개발, 솔루션, Java, Python, '
+                   '응용프로그래머, Python, 인공지능(AI), 빅데이터, 데이터분석, 자연어처리(NLP)',
+ 'RECUITMENT_PERIOD': '~07/31(일)',
+ 'TITLE': '빅데이터 플랫폼 SW/데이터엔지니어(JAVA/Python) 개발자 채용\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38931830?Oem_Code=C1&logpath=1&stext=파이썬&listno=31'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
  'AREA': '서울 강서구',
- 'CARRER': '신입·경력2년↑',
- 'COMPANY': '㈜와이즈교육',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜해강정보시스템',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '교재제작, 유아교육, 학습지, 프로그램강의, Python, 인공지능(AI), 교육기획, 교재컨텐츠개발',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '코딩/로봇교육 경력자 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/37996499?Oem_Code=C1&logpath=1&stext=파이썬&listno=45'}
-2022-06-30 20:27:05 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구 외',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '로그컴퍼니',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '백엔드개발, 블록체인, 프론트엔드개발, 핀테크, Android, Back End, Backend, '
-                   'frontend, Hybrid, front end, JavaScript, PL, React, UX설계, '
-                   'UI/UX설계, 소프트웨어개발, 솔루션, SI, 비품관리, 자산관리, 사무보조, 4대보험, 급여관리, '
-                   '마케팅, 마케팅기획, 바이럴마케팅, 소셜미디어, 키워드광고, 매출관리, 웹기획, 웹서비스기획, '
-                   '제안·컨설팅, PM, UI설계, 바이럴마케팅, 온라인마케팅, 웹광고기획, Java, php, '
-                   'Python, 안드로이드, API, Java, Python, 자바스크립트, 자바스크립트, Python, '
-                   '유지보수',
- 'RECUITMENT_PERIOD': '~07/31(일)',
- 'TITLE': '[로그컴퍼니] 웹기획/웹개발/프론트개발/백엔드개발/온라인마케팅/경영지원 경력직 모집\r\n'
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 솔루션, 안드로이드, C#, C++, Java, Python',
+ 'RECUITMENT_PERIOD': '~10/02(일)',
+ 'TITLE': 'POS 개발자 채용 / 앱.웹 개발 / C++ C# Java Python\r\n'
           '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38616640?Oem_Code=C1&logpath=1&stext=파이썬&listno=22'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:06 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 성남시',
- 'CARRER': '신입·경력',
- 'COMPANY': '크립토파라다이스유한책임회사',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '블록체인, AWS, blockchain, Azure, GCP, JavaScript, NODE.JS, '
-                   'REST, Travis CI, Typescript, graphql, 2D온라인게임, 게임개발, 보드게임, '
-                   '웹게임, 캐주얼게임, 게임개발, 서버, 데이터베이스, Python',
- 'RECUITMENT_PERIOD': '~07/05(화)',
- 'TITLE': '[CryptoParadise] Back-end Junior / Senior Developer\r\n'
-          '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/37976684?Oem_Code=C1&logpath=1&stext=파이썬&listno=46'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38931595?Oem_Code=C1&logpath=1&stext=파이썬&listno=32'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경북 구미시',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '㈜인삼육오',
+ 'AREA': '인천 연수구 외',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜쇼엠',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': ', 개발자, 셀레니움, 프로그래머, AWS, selenium, 웹프로그래머, HTML, Java, '
+                   'MySQL, Python, Java, Linux, Python',
+ 'RECUITMENT_PERIOD': '~09/02(금)',
+ 'TITLE': '[(주)쇼엠] ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38931245?Oem_Code=C1&logpath=1&stext=파이썬&listno=33'}
+2022-07-08 01:10:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4> (referer: None)
+2022-07-08 01:10:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5> (referer: None)
+2022-07-08 01:10:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3> (referer: None)
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '유한회사 랜선하우스부동산투어',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': ', 리엑트, 부동산앱, 부동산웹, 모바일App, 아이폰, 안드로이드, 데이터베이스, Python',
+ 'RECUITMENT_PERIOD': '~10/02(일)',
+ 'TITLE': '[서울]랜선하우스에서 ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38928531?Oem_Code=C1&logpath=1&stext=파이썬&listno=34'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 송파구 외',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '통신닥터',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, Python',
+ 'RECUITMENT_PERIOD': '~10/02(일)',
+ 'TITLE': 'Html Pdf 문서 Python 파싱 백앤드 개발\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38928245?Oem_Code=C1&logpath=1&stext=파이썬&listno=35'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '경기 군포시',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '㈜뷰엠테크놀로지',
  'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '소프트웨어개발, API, C#, C++, Java, Python, 시스템프로그래머, Python, '
-                   '빅데이터, 머신러닝(ML)',
- 'RECUITMENT_PERIOD': '~08/31(수)',
- 'TITLE': '웹/소프트웨어개발 업무 담당자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38591686?Oem_Code=C1&logpath=1&stext=파이썬&listno=23'}
-2022-06-30 20:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '자동제어, 전기제어, Firmware, Hardware, Micom, 응용프로그래머, C++, '
+                   'Embedded, Linux, Python, 기술연구소, 연구원, 전기·전자, 제품개발, R&D, '
+                   '임베디드, 전기, 전기·전자회로, 펌웨어, 하드웨어',
+ 'RECUITMENT_PERIOD': '~07/29(금)',
+ 'TITLE': '소프트웨어(C++,Python)(경력)담당자모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38922475?Oem_Code=C1&logpath=1&stext=파이썬&listno=36'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '㈜역사의물줄기',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '솔루션, Java, jsp, Python',
+ 'RECUITMENT_PERIOD': '~08/01(월)',
+ 'TITLE': '웹 개발자 (python, 풀스택) 경력직 채용\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38919653?Oem_Code=C1&logpath=1&stext=파이썬&listno=37'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
  'AREA': '경기 수원시',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '㈜스크린GO',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '모바일, 모바일App, 아이폰, 안드로이드, Java, Application, C++, Oracle, '
-                   'Python, tensorflow',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': 'AI, 서버 및 백엔드 개발자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/37937411?Oem_Code=C1&logpath=1&stext=파이썬&listno=47'}
-2022-06-30 20:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 영등포구',
- 'CARRER': '신입·경력3년↑',
- 'COMPANY': '비즈플러그',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '솔루션, BI, BigData, OLAP, 웹프로그래머, Java, jsp, Python, SQL',
- 'RECUITMENT_PERIOD': '~07/08(금)',
- 'TITLE': '웹프로그래머 신입, 경력사원을 모십니다.\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38572586?Oem_Code=C1&logpath=1&stext=파이썬&listno=24'}
-2022-06-30 20:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 송파구',
- 'CARRER': '신입·경력',
- 'COMPANY': '인슈로보',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '기획자, 모바일App, 모바일기획, 웹서비스기획, PM',
- 'RECUITMENT_PERIOD': '~09/28(수)',
- 'TITLE': '서비스 기획자 (또는 시스템 기획PM) 구인\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38899998?Oem_Code=C1&logpath=1&stext=파이썬&listno=48'}
-2022-06-30 20:27:08 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'CARRER': '경력',
+ 'COMPANY': '㈜연세교육아카데미',
+ 'EMPLOYMENT_TYPE': '계약직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': ', 직업전문학교, 빅데이터, 데이터분석, 프론트엔드, 직업전문학교, 교사, 기능학원, 학원강사, '
+                   'IT학원, 데이터베이스, MS-SQL, MySQL, Oracle, SQL, 응용프로그래머, Java, '
+                   'Oracle, Python, 프로그램강의',
+ 'RECUITMENT_PERIOD': '~07/15(금)',
+ 'TITLE': 'IT프로그래밍(자바,빅데이터,프론트엔드,',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38906276?Oem_Code=C1&logpath=1&stext=파이썬&listno=38'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '초대졸↑',
  'AREA': '서울 강남구',
- 'CARRER': '경력3년↑',
- 'COMPANY': '플루토스디에스㈜',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'django, FLASK, kafka, Python',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '[한빗코]가상자산 거래소 백엔드 개발자(Back-end developer) 경력직 채용 공고\r\n'
-          '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38536339?Oem_Code=C1&logpath=1&stext=파이썬&listno=25'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '제주 제주시',
  'CARRER': '신입·경력',
- 'COMPANY': '플레이콘',
+ 'COMPANY': '㈜인사이트정보',
  'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 웹프로그래머, 유지보수, 하드웨어, 소프트웨어',
- 'RECUITMENT_PERIOD': '~08/01(월)',
- 'TITLE': '개발자(프론트엔드,백엔드,딥러닝,풀스택) 모집/ (경력자 우대)\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38895214?Oem_Code=C1&logpath=1&stext=파이썬&listno=49'}
-2022-06-30 20:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경북 구미시',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '㈜인삼육오',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '소프트웨어개발, API, C#, C++, Java, Python, 시스템프로그래머, Python, '
-                   '빅데이터, 머신러닝(ML)',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '소프트웨어개발 업무 담당자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38535862?Oem_Code=C1&logpath=1&stext=파이썬&listno=26'}
-2022-06-30 20:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'SI, SM, Java, jsp, MySQL, Python, 응용프로그래머, Python, SQL',
+ 'RECUITMENT_PERIOD': '~07/25(월)',
+ 'TITLE': 'Python/MySQL, 웹/응용 개발자 모집 - 신입, 경력\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38842324?Oem_Code=C1&logpath=1&stext=파이썬&listno=61'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '알앤엠텍',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '무역업, C#, C++, Linux, Python',
+ 'RECUITMENT_PERIOD': '~09/15(목)',
+ 'TITLE': '통신장비 시험 소프트웨어 개발(Linux, Python, C++) 모집합니다.\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38759565?Oem_Code=C1&logpath=1&stext=파이썬&listno=81'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
  'AREA': '경기 성남시',
- 'CARRER': '경력',
- 'COMPANY': '아이디어콘서트',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발',
- 'RECUITMENT_PERIOD': '~08/01(월)',
- 'TITLE': '프론트백앤드, 딥러닝, 풀스택 개발자모집/경력자우대, 능력급여\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38893943?Oem_Code=C1&logpath=1&stext=파이썬&listno=50'}
-2022-06-30 20:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
  'CARRER': '경력3년↑',
- 'COMPANY': '㈜머지리티',
+ 'COMPANY': '이파피루스',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 웹프로그래머, Python, Python, 인공지능(AI), 데이터분석',
- 'RECUITMENT_PERIOD': '~08/23(화)',
- 'TITLE': '[AI] Data management 개발자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38519145?Oem_Code=C1&logpath=1&stext=파이썬&listno=27'}
-2022-06-30 20:27:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
- 'CARRER': '경력3년↑',
- 'COMPANY': '㈜닥터다이어리',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, 모바일기획, 웹기획, 웹서비스기획, PM',
- 'RECUITMENT_PERIOD': '~07/27(수)',
- 'TITLE': '[닥터다이어리 모바일] 서비스기획 PM (2년 이상)\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38857597?Oem_Code=C1&logpath=1&stext=파이썬&listno=51'}
-2022-06-30 20:27:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 금천구',
- 'CARRER': '신입·경력3년↑',
- 'COMPANY': '㈜하이큐',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, ERP, SI, SM, 웹프로그래머, 응용프로그래머, Java, Python, '
-                   '시스템분석, 시스템설계, 시스템엔지니어, 요구분석',
- 'RECUITMENT_PERIOD': '~06/30(목)',
- 'TITLE': '개발 신입 및 경력자 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38516290?Oem_Code=C1&logpath=1&stext=파이썬&listno=28'}
-2022-06-30 20:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
- 'CARRER': '경력3년↑',
- 'COMPANY': '㈜델레오코리아',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, DB2, DBA, MS-SQL, MySQL, SQL, asp, Java, jsp, '
-                   'php, SQL, API',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '[델레오코리아] Tech직군 인재채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38830716?Oem_Code=C1&logpath=1&stext=파이썬&listno=52'}
-2022-06-30 20:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 군포시',
- 'CARRER': '신입·경력',
- 'COMPANY': '새솔소프트',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '웹에이전시, 웹프로덕션, 웹프로그래머, HTML, Java, MySQL, SQL, Java, Linux, '
-                   'Python',
- 'RECUITMENT_PERIOD': '~08/23(화)',
- 'TITLE': '웹/시스템 개발 신입 및 경력 사원 모집\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38514525?Oem_Code=C1&logpath=1&stext=파이썬&listno=29'}
-2022-06-30 20:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 고양시',
- 'CARRER': '신입·경력3년↑',
- 'COMPANY': '주식회사 트리탑파티',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '스튜디오, 방송기획, 방송제작, PD·연출, 특수효과, 영화제작, 영화기획',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '영화/방송/광고/애니메이션 제작을 위한 CGI 아티스트를 모십니다.\r\n'
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, DataMining, ERP, 웹프로그래머, HTML, '
+                   'Java, Python, 응용프로그래머, API, Java, Linux, Python, 인공지능(AI), '
+                   '사물인터넷(IoT), 머신러닝(ML), tensorflow, 데이터분석',
+ 'RECUITMENT_PERIOD': '~07/30(토)',
+ 'TITLE': '[AI·인공지능사업부] 웹/python/백엔드 개발자 채용 (경력)\r\n'
           '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38741062?Oem_Code=C1&logpath=1&stext=파이썬&listno=53'}
-2022-06-30 20:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '대전 중구 외',
- 'CARRER': '경력2년↑',
- 'COMPANY': '초록테크',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '모바일, 스마트폰, 안드로이드, MySQL, SQL, 안드로이드, Java, Python, SQL',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '앱개발자 경력직 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38510750?Oem_Code=C1&logpath=1&stext=파이썬&listno=30'}
-2022-06-30 20:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 성동구',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38903225?Oem_Code=C1&logpath=1&stext=파이썬&listno=39'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 송파구',
  'CARRER': '경력',
- 'COMPANY': '㈜마이클컴퍼니',
+ 'COMPANY': '미래아이티㈜',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '인터넷교육, 취업포털, 커뮤니티, 컨텐츠, 포털, 웹프로그래머, Java, jsp, MySQL, '
-                   'Servlet, 웹접근성, 웹퍼블리셔, 자바스크립트, CSS3, HTML5, 모바일UI, 웹UI, '
-                   '일러스트레이터, 포토샵, UI·UX디자인',
- 'RECUITMENT_PERIOD': '~07/10(일)',
- 'TITLE': '백엔드, 프론트엔드 개발자 / 웹 디자이너 모집(경력)\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38667034?Oem_Code=C1&logpath=1&stext=파이썬&listno=54'}
-2022-06-30 20:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 금천구',
- 'CARRER': '신입·경력',
- 'COMPANY': '㈜에이아이톡',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, Python, 인공지능(AI), 머신러닝(ML), 자연어처리(NLP)',
- 'RECUITMENT_PERIOD': '~08/21(일)',
- 'TITLE': '2022 AI researcher 신입사원 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38477478?Oem_Code=C1&logpath=1&stext=파이썬&listno=31'}
-2022-06-30 20:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 구로구',
- 'CARRER': '신입·경력',
- 'COMPANY': '(주)씨앤앨',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': 'IOS, 쇼핑몰, 전자상거래, B2B, B2C, 웹프로그래머, Java, MySQL, php, Ruby',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': 'PHP / iOS 신입/경력 개발자 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38605125?Oem_Code=C1&logpath=1&stext=파이썬&listno=55'}
-2022-06-30 20:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '부산 해운대구',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '㈜그래코퍼레이션',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '쇼핑몰, 전자상거래, 웹프로그래머, AJAX, HTML, Python, 웹접근성, 웹퍼블리셔, '
-                   '자바스크립트, CSS3, HTML5, 웹UI, 일러스트레이터, 포토샵, HTML, UI·UX디자인',
- 'RECUITMENT_PERIOD': '~08/17(수)',
- 'TITLE': '(주)그래코퍼레이션 웹프론트엔드 정규직 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38451312?Oem_Code=C1&logpath=1&stext=파이썬&listno=32'}
-2022-06-30 20:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
- 'CARRER': '신입·경력3년↑',
- 'COMPANY': '㈜리눅스긱',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '소프트웨어개발',
- 'RECUITMENT_PERIOD': '~07/31(일)',
- 'TITLE': '웹개발자 채용공고\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38512822?Oem_Code=C1&logpath=1&stext=파이썬&listno=56'}
-2022-06-30 20:27:14 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 서초구 외',
- 'CARRER': '신입·경력2년↑',
- 'COMPANY': '㈜소울웨어',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 솔루션, BigData, SI, HTML, Java, MySQL, '
-                   'Servlet, SQL, 아이폰, 안드로이드, Java, Python, WAS, 인공지능(AI), '
-                   '사물인터넷(IoT), 머신러닝(ML), 하둡(Hadoop), Spark',
- 'RECUITMENT_PERIOD': '~08/14(일)',
- 'TITLE': '개발자(웹/앱 애플리케이션, 백엔드/프론트엔드), 연구개발(IoT, 머신러닝, 인공지능)\r\n'
-          '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38412772?Oem_Code=C1&logpath=1&stext=파이썬&listno=33'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 중구',
- 'CARRER': '경력3년↑',
- 'COMPANY': '라이언로켓',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발',
- 'RECUITMENT_PERIOD': '~08/18(목)',
- 'TITLE': '[라이언로켓] 백엔드 개발자 채용 (경력)\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38465175?Oem_Code=C1&logpath=1&stext=파이썬&listno=57'}
-2022-06-30 20:27:15 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'Python, 빅데이터, Spark, 머신러닝, 인공지능, web, 소프트웨어개발, 솔루션, '
+                   'BigData, SI, 웹프로그래머, Java, jsp, Python, Python, 인공지능(AI), '
+                   '빅데이터, 사물인터넷(IoT), 데이터분석',
+ 'RECUITMENT_PERIOD': '~09/22(목)',
+ 'TITLE': 'Java/JSP/Python/빅데이터/AI 경력직 채용\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38842096?Oem_Code=C1&logpath=1&stext=파이썬&listno=62'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
  'AREA': '서울 영등포구',
- 'CARRER': '신입·경력',
- 'COMPANY': '㈜누리랩',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '웹프로그래머, Java, jsp, php, SQL, 응용프로그래머, C, C++, Java, Python',
- 'RECUITMENT_PERIOD': '~07/15(금)',
- 'TITLE': 'Windows 및 Linux 응용프로그램 개발자 모십니다 [병역특례(보충역) 지원 가능]\r\n'
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '㈜조인아이티',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, DW, ERP, SI, SM, Python',
+ 'RECUITMENT_PERIOD': '~09/15(목)',
+ 'TITLE': 'SI/개발/전자.Device,datalake고도화/06.20-22.12.31/여의도/중급-고급/python/데이터레이크고도화/\r\n'
           '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38410126?Oem_Code=C1&logpath=1&stext=파이썬&listno=34'}
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38754669?Oem_Code=C1&logpath=1&stext=파이썬&listno=82'}
 Traceback (most recent call last):
   File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
     current.result = callback(  # type: ignore[misc]
   File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
     return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
   File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
   File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
     result = self._query(query)
   File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
@@ -492,222 +413,961 @@ Traceback (most recent call last):
   File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
- 'CARRER': '경력',
- 'COMPANY': '쿼드마이너',
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '알앤엠텍',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'Restfull API 개발, 데이터베이스(Postgresql), 시스템간 파이프라인 개발, 정보보안',
- 'RECUITMENT_PERIOD': '~08/17(수)',
- 'TITLE': '업계 최고 대우로 백엔드 개발자를 모십니다.\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38450109?Oem_Code=C1&logpath=1&stext=파이썬&listno=58'}
-2022-06-30 20:27:16 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 마포구 외',
- 'CARRER': '신입·경력',
- 'COMPANY': '㈜일루넥스',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, SI, SM, 데이터베이스, MS-SQL, MySQL, SQL, '
-                   '네트워크관리, 네트워크엔지니어, 보안관리, 보안기술, 서버관리자, 서버구축, 시스템운영, Linux, '
-                   '웹프로그래머, AJAX, APM, asp, ASP.NET, HTML, Java, jsp, mHTML, '
-                   'MiPlatform, MS-SQL, MySQL, php, Python, SCJP, SQL, 안드로이드, '
-                   '응용프로그래머, 전산전공, ActiveX, Application, ASP.NET, C, C#, C++, '
-                   'C++Builder, Embedded, Java, Linux, Oracle, PowerBuilder, '
-                   'Pro-C, Python, SQL, Unix, 시스템프로그래머, 펌웨어, 웹접근성, 웹퍼블리셔, 웹표준, '
-                   '자바스크립트, CSS, CSS3, HTML5, HTML코딩, UI·UX, 모바일UI, 웹UI, '
-                   '일러스트레이터, 자바스크립트, 포토샵, 플래쉬, CSS, GUI, HTML, Sketch, '
-                   'UI·UX디자인, Python, 빅데이터, 데이터분석, 소프트웨어, 그래픽디자인, 시각디자인, '
-                   '일러스트레이터, 포토샵, CI',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '2022년 경력 웹 프로그래머(서버, 프론트, 퍼블리싱) 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38387173?Oem_Code=C1&logpath=1&stext=파이썬&listno=35'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'etc' at row 1")
-2022-06-30 20:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경북 경산시 외',
- 'CARRER': '신입·경력',
- 'COMPANY': '㈜테이큰소프트',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, DataMining, SI, 응용프로그래머, 인공지능(AI), '
-                   '머신러닝(ML), 딥러닝, tensorflow, 데이터분석',
- 'RECUITMENT_PERIOD': '~08/14(일)',
- 'TITLE': '[신입/경력] 데이터분석 인재 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38408308?Oem_Code=C1&logpath=1&stext=파이썬&listno=59'}
-2022-06-30 20:27:16 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 고양시 외',
- 'CARRER': '신입·경력',
- 'COMPANY': '디앤샤인',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '네트웍구축, 유비쿼터스, 통신, 경영기획, 기획, 기획조사, 사업기획, 신규사업·BD, 더존, 문서관리, '
-                   '문서작성, 사무보조, 워드, 전산편집, 전산회계, Excel, OA, 4대보험, 결산, 경리, 경영지원, '
-                   '관리회계, 급여관리, 더존, 세무, 예산관리, 원가회계, 이카운트, 전산회계, 결산, 세무, 재무, '
-                   '재무기획, 재무회계, AICPA, CFA, CPA, 국내영업, 기술영업, 납품영업, 일반영업, 기술영업, '
-                   '기술지원, 솔루션영업, 시스템영업, 하드웨어영업, 영업기획, 데이터베이스, MS-SQL, MySQL, '
-                   'SQL, 데이터마이닝, 응용프로그래머, C, C++, Linux, SQL, 시스템프로그래머, 어셈블리, '
-                   '임베디드, 펌웨어, MMI, Python, 인공지능(AI), 빅데이터, tensorflow, 데이터분석, '
-                   '유지보수, 펌웨어, 하드웨어, 소프트웨어, 유지보수, 임베디드, 전기·전자회로, AS, VoIP, '
-                   '무선통신, 전자통신, 정보통신, 통신공사, CCTV',
- 'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '분야별[사업기획/ IoT 장비 영업/HW 개발자/SW/펌웨어 개발/유지보수/생산관리/경영지원]직원 채용[신입/경력]\r\n'
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '무역업, C#, C++, Linux, Python',
+ 'RECUITMENT_PERIOD': '~09/28(수)',
+ 'TITLE': '통신장비 시험 소프트웨어 개발(Linux, Python, C++)\r\n'
           '                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38334662?Oem_Code=C1&logpath=1&stext=파이썬&listno=36'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
-2022-06-30 20:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=3>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강서구',
- 'CARRER': '신입·경력1년↑',
- 'COMPANY': '㈜알차다',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'HTML5, 그누보드, 부트스트랩, 영카트, jquery, Swipe, 모바일앱개발, 소프트웨어개발, '
-                   '웹접근성, 웹퍼블리셔, 웹표준, 자바스크립트, CSS3',
- 'RECUITMENT_PERIOD': '~08/10(수)',
- 'TITLE': 'WEB / APP 퍼블리셔를 모집합니다 (신입 / 경력)\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38376617?Oem_Code=C1&logpath=1&stext=파이썬&listno=60'}
-2022-06-30 20:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 강남구',
- 'CARRER': '경력5년↑',
- 'COMPANY': '㈜아토머스',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': '모바일App, 데이터베이스, MySQL, MySQL, Python, API, Linux, Python',
- 'RECUITMENT_PERIOD': '~07/15(금)',
- 'TITLE': '백엔드 개발자\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38324695?Oem_Code=C1&logpath=1&stext=파이썬&listno=37'}
-2022-06-30 20:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
-{'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '서울 서초구 외',
- 'CARRER': '신입·경력2년↑',
- 'COMPANY': '이너뷰',
- 'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'AE, QA, 웹 AE, SI, 웹에이전시, 모바일기획, 웹기획, 웹서비스기획, 통계·로그분석, PM, '
-                   'UI설계, Java, jsp, MS-SQL, php, Python, SQL, API, Linux, '
-                   '웹접근성, 웹퍼블리셔, 웹표준, 자바스크립트, CSS, UI·UX',
- 'RECUITMENT_PERIOD': '~08/05(금)',
- 'TITLE': '웹에이전시 정규직 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38314904?Oem_Code=C1&logpath=1&stext=파이썬&listno=38'}
-2022-06-30 20:27:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
- 'AREA': '경기 고양시 외',
- 'CARRER': '경력',
- 'COMPANY': '㈜선후',
- 'EMPLOYMENT_TYPE': '정규직 외',
- 'OTHER_CONTENTS': 'UI·UX디자인, 웹에이전시, .NET, 웹프로그래머, AJAX, APM, asp, ASP.NET, '
-                   'cgi, EJB, HDML, HTML, Java, jsp, mHTML, MiPlatform, '
-                   'MS-SQL, MySQL, php, Python, SCJP, Servlet, SQL, VB.NET, '
-                   'VRML, WinForm, wml, xml, Ruby, .NET, 병역특례, 아이폰, 안드로이드, '
-                   '액션스크립트, 응용프로그래머, 전산전공, 증강현실, 플래시APP, ABAP, ActiveX, API, '
-                   'Application, ASP.NET, C, C#, C#Builder, C++, C++Builder, '
-                   'CTI, Delphi, DirectX, Embedded, Java, Linux, MFC, Oracle, '
-                   'PowerBuilder, Pro-C, Python, RFID, SAP, SQL, Unix, VB.NET, '
-                   'VisualBasic, VisualC, VisualC++, VoIP, WAS, Win32, '
-                   'Windows, WindowsMobile, 가상현실, 웹사이트운영, 컨텐츠에디터, 드림위버, 모바일UI, '
-                   '웹UI, 일러스트레이터, 자바스크립트, 포토샵, 플래쉬, CSS, GUI, HTML, xml, '
-                   'Sketch, UI·UX디자인, 3D, 시각디자인, 일러스트레이터, 포토샵, 편집디자인(IBM), '
-                   '편집디자인(MAC), 폰트·서체, 삽화·일러스트, 광고디자인, 디지털디자인, 시각디자인, '
-                   '크리에이티브디렉터',
- 'RECUITMENT_PERIOD': '~07/31(일)',
- 'TITLE': '[IT기술벤처] 개발자, 웹디자이너, UI/UX, 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38250750?Oem_Code=C1&logpath=1&stext=파이썬&listno=39'}
-Traceback (most recent call last):
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
-    current.result = callback(  # type: ignore[misc]
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
-    self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
-    result = self._query(query)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
-    conn.query(q)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
-    result.read()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
-    first_packet = self.connection._read_packet()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
-    packet.raise_for_error()
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1406, "Data too long for column 'etc' at row 1")
-2022-06-30 20:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&careerType=2&careerMin=1&careerMax=5&edu=0&payType=1&payMin=2500&payMax=3000&recruit&Page_No=2>
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38896944?Oem_Code=C1&logpath=1&stext=파이썬&listno=41'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=2>
 {'ACADEMIC_ABILILTY': '학력무관',
  'AREA': '대전 유성구',
- 'CARRER': '신입·경력',
- 'COMPANY': '컨트롤에프',
+ 'CARRER': '경력무관',
+ 'COMPANY': '아이와즈',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '데이터시각화, 데이터라벨링, SQL, 데이터마이닝, Java, Python, 인공지능(AI), 빅데이터, '
+                   '사물인터넷(IoT), 머신러닝(ML), 딥러닝, 소프트웨어',
+ 'RECUITMENT_PERIOD': '~09/28(수)',
+ 'TITLE': '[AI] Python JAVA 머신러닝 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38901871?Oem_Code=C1&logpath=1&stext=파이썬&listno=40'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 금천구',
+ 'CARRER': '경력5년↑',
+ 'COMPANY': '㈜에스에프테크놀로지',
  'EMPLOYMENT_TYPE': '정규직',
- 'OTHER_CONTENTS': 'Python, 머신러닝(ML)',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, DataMining, WAS, Java, jsp, Python',
+ 'RECUITMENT_PERIOD': '~09/22(목)',
+ 'TITLE': '웹 자바, ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38839271?Oem_Code=C1&logpath=1&stext=파이썬&listno=63'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '디비디스커버코리아',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'Python, 인공지능(AI), 딥러닝, 데이터분석, 자연어처리(NLP)',
  'RECUITMENT_PERIOD': '상시채용',
- 'TITLE': '기업부설연구소 기술개발팀 신규, 경력 채용\r\n                            ',
- 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38179631?Oem_Code=C1&logpath=1&stext=파이썬&listno=40'}
-2022-06-30 20:27:18 [scrapy.core.engine] INFO: Closing spider (finished)
-2022-06-30 20:27:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 708,
- 'downloader/request_count': 2,
- 'downloader/request_method_count/GET': 2,
- 'downloader/response_bytes': 60893,
- 'downloader/response_count': 2,
- 'downloader/response_status_count/200': 2,
- 'elapsed_time_seconds': 16.15237,
+ 'TITLE': 'Python개발자/Machine Vision/이미지분석/Text 분석\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38754375?Oem_Code=C1&logpath=1&stext=파이썬&listno=83'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '경남 창원시 외',
+ 'CARRER': '경력',
+ 'COMPANY': '㈜무른모',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, ERP, SCM, Python, WinForm, C#',
+ 'RECUITMENT_PERIOD': '~09/27(화)',
+ 'TITLE': '.NET C# Python 개발자 (경력/신입, 창원)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38890629?Oem_Code=C1&logpath=1&stext=파이썬&listno=42'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '부산 부산진구 외',
+ 'CARRER': '경력무관',
+ 'COMPANY': '싸인랩',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 솔루션, asp, BigData, Python',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '(추가모집)데이터 가공 분석  Python 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38833899?Oem_Code=C1&logpath=1&stext=파이썬&listno=64'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강동구',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '㈜경일게임아카데미',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'IT학원, .NET, 웹프로그래머, asp, Java, Python, 자바스크립트, 자바스크립트',
+ 'RECUITMENT_PERIOD': '~08/15(월)',
+ 'TITLE': '[KGA] 자바/ ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38742278?Oem_Code=C1&logpath=1&stext=파이썬&listno=84'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 중구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '통로이미지㈜',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'Apache, 프론트엔드개발, 프론트엔드, CRP, GIT, JavaScript, jquery, '
+                   'laravel, RESTful API, Typescript, 소프트웨어개발, 솔루션, 컨텐츠, 모바일, '
+                   '모바일App, 아이폰, 안드로이드, 데이터베이스, MySQL, Oracle, 웹프로그래머, MS-SQL, '
+                   'php, Python, 아이폰, 안드로이드, 응용프로그래머, 전산전공, API, Application, '
+                   'Java, Linux, Oracle, Python, SQL, Unix, 자바스크립트, CSS, '
+                   'HTML5, UI·UX, 데이터분석',
+ 'RECUITMENT_PERIOD': '~07/31(일)',
+ 'TITLE': '[정규/경력] 클립아트코리아 IT개발자 인재 채용 (',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38889619?Oem_Code=C1&logpath=1&stext=파이썬&listno=43'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'etc' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강남구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜코리아정보보안아이티아카데미',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '학원강사, IT학원, 응용프로그래머, Java, Python, SQL, WAS, 프로그램강의, '
+                   '컴퓨터학원강사, IT학원강사, 직업훈련교사',
+ 'RECUITMENT_PERIOD': '~07/24(일)',
+ 'TITLE': '[IT 강사모집] 자바, ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38833244?Oem_Code=C1&logpath=1&stext=파이썬&listno=65'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': 'Interspark Korea',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'IT컨설팅, Python',
+ 'RECUITMENT_PERIOD': '~09/13(화)',
+ 'TITLE': 'Python 개발자 채용 (2년 이상)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38738561?Oem_Code=C1&logpath=1&stext=파이썬&listno=85'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '고졸↑',
+ 'AREA': '서울 금천구 외',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '라임프렌즈',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'Android, IOS, Node, NODE.JS, SWIFT, Flutter, 모바일앱개발, '
+                   '소프트웨어개발, BI, BigData, SI, 아이폰, 안드로이드, API, Application, '
+                   'Python, Python, 인공지능(AI), 빅데이터, 데이터분석',
+ 'RECUITMENT_PERIOD': '~07/29(금)',
+ 'TITLE': '[IT사회적기업] Android, iOS, Node.js, Python백엔드 개발자 경력(신입)자 모집\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38888744?Oem_Code=C1&logpath=1&stext=파이썬&listno=44'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 강남구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '파르테논어학원',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '어학원, Python',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '[DYB교육] 라이브 플랫폼 개발(Python) 경력자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38830703?Oem_Code=C1&logpath=1&stext=파이썬&listno=66'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 금천구',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '두타위즈',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, CRM, SI, 웹프로그래머, HTML, Java, MS-SQL, MySQL, php, '
+                   'Python, SQL, 응용프로그래머, 전산전공, C, Java, Python, SQL, Python, '
+                   '인공지능(AI), 소프트웨어',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': 'JAVA, Python 웹 개발 신입/경력 사원 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38726909?Oem_Code=C1&logpath=1&stext=파이썬&listno=86'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 강남구',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '㈜커리어게이트',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '기능학원, 학원강사, IT학원, Java, Python, 대학강사, 대학교수, 시간강사, 컴퓨터학원강사, '
+                   'IT학원강사',
+ 'RECUITMENT_PERIOD': '~09/27(화)',
+ 'TITLE': '[메가스터디 SW입시센터] 프로그래밍 강사 모집( Python, Unity )\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38888421?Oem_Code=C1&logpath=1&stext=파이썬&listno=45'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 중구',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '㈜조인아이티',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, DW, SI, SM, Python',
+ 'RECUITMENT_PERIOD': '~09/21(수)',
+ 'TITLE': 'SI/개발/이커머스.손익및리스크관리/08.01-22.12.31/시청역/중급/python/\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38830531?Oem_Code=C1&logpath=1&stext=파이썬&listno=67'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '시스메틱',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, BigData, Python, 인공지능(AI), 머신러닝(ML), 딥러닝, '
+                   '자연어처리(NLP)',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '백엔드 엔지니어 모집(Python/Javascript)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38727189?Oem_Code=C1&logpath=1&stext=파이썬&listno=87'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 용산구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '㈜에이시지알',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '백엔드, Nodejs, 컨설팅, Python, Python, 자바스크립트',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '[경력] 풀스택 (Javascript/React, Node.js/Python) 개발자 모집\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38886844?Oem_Code=C1&logpath=1&stext=파이썬&listno=46'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '조인아이티',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, BigData, DW, SI, SM, Python',
+ 'RECUITMENT_PERIOD': '~09/20(화)',
+ 'TITLE': 'SM/운영/화학.데이터/Python/즉시-22.12.31(계속)/여의도.트윈타워)/고급/\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38817168?Oem_Code=C1&logpath=1&stext=파이썬&listno=68'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 마포구 외',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '메가스터디아이티아카데미신촌학원',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '기능학원, 학원강사, IT학원, Java, jsp, Python, 프로그램강의, 일반학원강사, '
+                   '컴퓨터학원강사, IT학원강사, 직업훈련교사',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '[메가스터디IT아카데미] 프로그래밍, C언어, JAVA, Python 강사채용\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38727056?Oem_Code=C1&logpath=1&stext=파이썬&listno=88'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 동대문구',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '㈜비전인사이드',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, Python, 병역특례',
+ 'RECUITMENT_PERIOD': '~07/29(금)',
+ 'TITLE': '[병역특례(보충역,전직 산업기능요원)] Python 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38884730?Oem_Code=C1&logpath=1&stext=파이썬&listno=47'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 구로구 외',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '이지지아이에스㈜',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, IT컨설팅, Java, Python, 응용프로그래머, C#, '
+                   'Java, Python, SQL, 빅데이터, 머신러닝(ML)',
+ 'RECUITMENT_PERIOD': '~09/20(화)',
+ 'TITLE': 'Python개발(인공지능,교통 관련) 경력자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38810636?Oem_Code=C1&logpath=1&stext=파이썬&listno=69'}
+2022-07-08 01:10:17 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '강원 원주시',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜인프라큐브',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, SM, 웹프로그래머, 응용프로그래머, Java, Python, Python, '
+                   '인공지능(AI)',
+ 'RECUITMENT_PERIOD': '~07/13(수)',
+ 'TITLE': '[신입/경력] 원주지역 개발자 채용. Java, Python, 백엔드, 응용서비스 개발 등\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38709783?Oem_Code=C1&logpath=1&stext=파이썬&listno=89'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 중구 외',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '㈜데이터위버',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'BI, BigData, DataMining, DataWarehouse, DW, Python, '
+                   '머신러닝(ML), 데이터분석, 자연어처리(NLP)',
+ 'RECUITMENT_PERIOD': '~09/26(월)',
+ 'TITLE': '[경력/프리] 딥러닝 ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38878897?Oem_Code=C1&logpath=1&stext=파이썬&listno=48'}
+2022-07-08 01:10:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '고졸↑',
+ 'AREA': '서울 금천구',
+ 'CARRER': '경력',
+ 'COMPANY': '라임프렌즈',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, BI, BigData, SI, HTML, MS-SQL, MySQL, '
+                   'php, Python, 웹표준, 자바스크립트, CSS, CSS3, HTML5, Python, '
+                   '인공지능(AI), 빅데이터, 사물인터넷(IoT), 딥러닝',
+ 'RECUITMENT_PERIOD': '~07/21(목)',
+ 'TITLE': '[IT사회적기업 라임프렌즈] Node.js, Python백엔드 팀장 모집\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38804009?Oem_Code=C1&logpath=1&stext=파이썬&listno=70'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 금천구 외',
+ 'CARRER': '경력',
+ 'COMPANY': '프로덕트에셋컨설팅',
+ 'EMPLOYMENT_TYPE': '프리랜서',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, Python',
+ 'RECUITMENT_PERIOD': '~07/31(일)',
+ 'TITLE': 'Python개발자 모집(업계 최고 단가/워라밸 보장)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38703148?Oem_Code=C1&logpath=1&stext=파이썬&listno=90'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 중구 외',
+ 'CARRER': '신입',
+ 'COMPANY': '㈜데이터위버',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'BI, BigData, DataMining, DataWarehouse, DW, Python, '
+                   '머신러닝(ML), 딥러닝, tensorflow, 자연어처리(NLP)',
+ 'RECUITMENT_PERIOD': '~09/26(월)',
+ 'TITLE': '[신입] ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38878861?Oem_Code=C1&logpath=1&stext=파이썬&listno=49'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '경기 성남시',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '㈜앱컴파니',
+ 'EMPLOYMENT_TYPE': '프리랜서',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BI, BigData, DataMining, Java, Python',
+ 'RECUITMENT_PERIOD': '~07/21(목)',
+ 'TITLE': '[급구]빅데이터 ML 플랫폼 POC 구축 Python , Java 개발자 구함\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38798213?Oem_Code=C1&logpath=1&stext=파이썬&listno=71'}
+2022-07-08 01:10:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강남구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '누리꿈소프트㈜',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '데이터분석 및 전처리, BigData, Python, 데이터분석',
+ 'RECUITMENT_PERIOD': '~07/11(월)',
+ 'TITLE': '[가산디지털]대기업 데이터분석,PYTHON인력을 구인합니다(즉시부터 연말,장기가능)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38689305?Oem_Code=C1&logpath=1&stext=파이썬&listno=91'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '대전 서구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '미래융합교육원',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'IT학원, C, C#, C++, Java, Python, 프로그램강의, Python, 인공지능(AI), '
+                   '빅데이터, 머신러닝(ML), 딥러닝',
+ 'RECUITMENT_PERIOD': '~09/26(월)',
+ 'TITLE': '인공지능, 빅데이터 분야 (자바,',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38874522?Oem_Code=C1&logpath=1&stext=파이썬&listno=50'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '경기 성남시',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '㈜앱컴파니',
+ 'EMPLOYMENT_TYPE': '프리랜서',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BI, BigData, DataMining, Python',
+ 'RECUITMENT_PERIOD': '~07/15(금)',
+ 'TITLE': '[급구]체계 구측을 위한 Python 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38798198?Oem_Code=C1&logpath=1&stext=파이썬&listno=72'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 중구',
+ 'CARRER': '경력7년↑',
+ 'COMPANY': '코리아뉴스와이어',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'django, 광고대행, 온라인광고, 컨벤션, 홍보대행, Python',
+ 'RECUITMENT_PERIOD': '~09/08(목)',
+ 'TITLE': '신규 웹프로젝트를 이끌어갈 Python / Django 개발자 모십니다.\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38685130?Oem_Code=C1&logpath=1&stext=파이썬&listno=92'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '고졸↑',
+ 'AREA': '서울 강남구 외',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜아이메디신',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'Backend, 바이오, 생명공학, 의료기기, 웹프로그래머, Java, jsp, Python, Java, '
+                   'Python',
+ 'RECUITMENT_PERIOD': '~07/28(목)',
+ 'TITLE': 'Python 백엔드 개발자 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38871515?Oem_Code=C1&logpath=1&stext=파이썬&listno=51'}
+2022-07-08 01:10:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '경북 포항시',
+ 'CARRER': '신입·경력5년↑',
+ 'COMPANY': '㈜케이텍',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '자동제어, 전기, 전기설계, 제어, PLC, MFC, Python, VisualC++',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': '프로그램 개발자 모집(Machine Vision, AI(Python), C, C#, C++)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38792815?Oem_Code=C1&logpath=1&stext=파이썬&listno=73'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '바이오커넥트',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, C++, Python',
+ 'RECUITMENT_PERIOD': '~08/09(화)',
+ 'TITLE': '생체정보 추출 영상처리 알고리즘 개발(C++, Python, 딥러닝)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38680655?Oem_Code=C1&logpath=1&stext=파이썬&listno=93'}
+2022-07-08 01:10:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 강남구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜가이온',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, 요구분석, PM, Python, 빅데이터, 머신러닝(ML), '
+                   '데이터분석',
+ 'RECUITMENT_PERIOD': '~09/26(월)',
+ 'TITLE': '[신입/경력] 보안 웹 서비스 개발자(Java / Python / JavaScript)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38871132?Oem_Code=C1&logpath=1&stext=파이썬&listno=52'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 강남구 외',
+ 'CARRER': '신입·경력5년↑',
+ 'COMPANY': '㈜유더블유에스',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '솔루션, ISP, SI, Java, jsp, MySQL, Python, Servlet, Java, '
+                   'Oracle, Python, Unix',
+ 'RECUITMENT_PERIOD': '~07/31(일)',
+ 'TITLE': 'Spring, Python 개발자 신입/경력 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38770960?Oem_Code=C1&logpath=1&stext=파이썬&listno=74'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '부산 해운대구 외',
+ 'CARRER': '신입',
+ 'COMPANY': '센텀직업전문학교',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '직업전문학교, Application, Java, Python, 웹퍼블리셔, 웹표준, 자바스크립트, '
+                   'HTML코딩, UI·UX, Python, 빅데이터, 사물인터넷(IoT)',
+ 'RECUITMENT_PERIOD': '~07/31(일)',
+ 'TITLE': '[ 부산IT 취업 ] 자바(JAVA) ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38676836?Oem_Code=C1&logpath=1&stext=파이썬&listno=94'}
+2022-07-08 01:10:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 중구 외',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '㈜키스템프',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'django, ORACLEDB, 소프트웨어개발, 솔루션, ERP, SI, SM, 웹프로그래머, '
+                   'ASP.NET, Python, 응용프로그래머, ASP.NET, C#, Python, 모델링, 시스템분석, '
+                   '시스템설계, 요구분석, DBA',
+ 'RECUITMENT_PERIOD': '~07/12(화)',
+ 'TITLE': '[정규직/연4,800-6,500] 키스템프 본사 웹개발자(Asp.net/Python/Django)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38867277?Oem_Code=C1&logpath=1&stext=파이썬&listno=53'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강남구 외',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '알체라',
+ 'EMPLOYMENT_TYPE': '계약직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, SI, Python, Python',
+ 'RECUITMENT_PERIOD': '~09/18(일)',
+ 'TITLE': '',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38788985?Oem_Code=C1&logpath=1&stext=파이썬&listno=75'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 구로구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': '주식회사 그랫',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'django, 모바일App, Python, API, Python, 인공지능(AI), 빅데이터, '
+                   '머신러닝(ML)',
+ 'RECUITMENT_PERIOD': '~07/10(일)',
+ 'TITLE': '[그랫] Django 기반 Rest Api ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38674771?Oem_Code=C1&logpath=1&stext=파이썬&listno=95'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 금천구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '㈜웹프라자',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '웹에이전시, jsp, php, Python',
+ 'RECUITMENT_PERIOD': '~07/27(수)',
+ 'TITLE': 'php, python 웹프로그래머 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38865521?Oem_Code=C1&logpath=1&stext=파이썬&listno=54'}
+2022-07-08 01:10:18 [scrapy.core.scraper] ERROR: Error processing {'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜밸류어블',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'BigData, C#, Java, Python',
+ 'RECUITMENT_PERIOD': '~09/18(일)',
+ 'TITLE': '[밸류어블] 소프트웨어 개발 및 데이터 가공 담당 개발자 채용(Python, C#, JAVA)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38785024?Oem_Code=C1&logpath=1&stext=파이썬&listno=76'}
+Traceback (most recent call last):
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 162, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\bbde1\Desktop\crawling\Spirit\Fighting\pipelines.py", line 33, in process_item
+    self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\bbde1\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'title' at row 1")
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강서구',
+ 'CARRER': '경력5년↑',
+ 'COMPANY': '㈜다모아솔루션',
+ 'EMPLOYMENT_TYPE': '프리랜서',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'SI, 웹프로그래머, AJAX, Java, jsp, Python, 응용프로그래머, API, Java, '
+                   'Oracle, Python',
+ 'RECUITMENT_PERIOD': '~09/07(수)',
+ 'TITLE': '[JAVA/Python 모집] LG전자 클라우드 플랫폼 개발운영(SM)\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38673677?Oem_Code=C1&logpath=1&stext=파이썬&listno=96'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '대전 유성구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '더스카이랩㈜',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, 응용프로그래머, Python, Python, 데이터분석',
+ 'RECUITMENT_PERIOD': '~09/25(일)',
+ 'TITLE': '백엔드/서버/Python 개발자/연구원 모집\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38865210?Oem_Code=C1&logpath=1&stext=파이썬&listno=55'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '인천 남동구 외',
+ 'CARRER': '경력무관',
+ 'COMPANY': '이젠아카데미컴퓨터학원',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '회원모집상담, IT학원, Python, 빅데이터',
+ 'RECUITMENT_PERIOD': '~07/11(월)',
+ 'TITLE': '스마트 빅데이터분석 머신러닝활용 프로젝트개발(',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38780647?Oem_Code=C1&logpath=1&stext=파이썬&listno=77'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '신입·경력2년↑',
+ 'COMPANY': '더베스트',
+ 'EMPLOYMENT_TYPE': '계약직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, SQL, 데이터마이닝, 웹프로그래머, Java, Python, SQL, Python, '
+                   '인공지능(AI), 빅데이터, 머신러닝(ML), 딥러닝',
+ 'RECUITMENT_PERIOD': '~07/09(토)',
+ 'TITLE': '웹(Python,Java)개발자 채용공고\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38673644?Oem_Code=C1&logpath=1&stext=파이썬&listno=97'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '경기 안양시',
+ 'CARRER': '경력무관',
+ 'COMPANY': '더스카이랩㈜',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, 응용프로그래머, Python, Python, 데이터분석',
+ 'RECUITMENT_PERIOD': '~09/25(일)',
+ 'TITLE': '백엔드/서버/Python 개발자/연구원 모집(서울·경기)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38865143?Oem_Code=C1&logpath=1&stext=파이썬&listno=56'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 강서구',
+ 'CARRER': '신입·경력',
+ 'COMPANY': '㈜에이알컴즈',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, 웹프로그래머, MySQL, Python, Python',
+ 'RECUITMENT_PERIOD': '상시채용',
+ 'TITLE': 'Python 개발자 신입/경력 채용\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38777405?Oem_Code=C1&logpath=1&stext=파이썬&listno=78'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 서초구',
+ 'CARRER': '경력2년↑',
+ 'COMPANY': 'Interspark Korea',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'IT컨설팅, Python',
+ 'RECUITMENT_PERIOD': '~09/07(수)',
+ 'TITLE': 'Python 개발자 채용 (2년 이상 경력)\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38669629?Oem_Code=C1&logpath=1&stext=파이썬&listno=98'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '전북 전주시',
+ 'CARRER': '경력무관',
+ 'COMPANY': '그린컴퓨터아트학원 전주캠퍼스',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '학원강사, IT학원, 웹프로그래머, AJAX, Java, jsp, Python, 실업계학원강사, '
+                   '컴퓨터학원강사, IT학원강사, 직업훈련교사, 전문직업강사',
+ 'RECUITMENT_PERIOD': '~07/22(금)',
+ 'TITLE': 'JAVA(자바)&',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38857561?Oem_Code=C1&logpath=1&stext=파이썬&listno=57'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 영등포구 외',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '유소프트',
+ 'EMPLOYMENT_TYPE': '정규직 외',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 안드로이드, C#, Java, Python',
+ 'RECUITMENT_PERIOD': '~09/15(목)',
+ 'TITLE': 'C# or JAVA or Python 중 하나 이상 가능하신 개발자님 채용합니다.\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38764323?Oem_Code=C1&logpath=1&stext=파이썬&listno=79'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '초대졸↑',
+ 'AREA': '서울 강서구',
+ 'CARRER': '경력',
+ 'COMPANY': '㈜한서디지털트윈',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, C#, C++, Java, Oracle, Python, 소프트웨어',
+ 'RECUITMENT_PERIOD': '~08/08(월)',
+ 'TITLE': '개발자 채용 C++ C# Java Oracle Python\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38668638?Oem_Code=C1&logpath=1&stext=파이썬&listno=99'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 강남구',
+ 'CARRER': '경력무관',
+ 'COMPANY': '㈜지지큐컴퍼니',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '모바일앱개발, 소프트웨어개발, 솔루션, BigData, Python, 인공지능(AI), 머신러닝(ML)',
+ 'RECUITMENT_PERIOD': '~09/25(일)',
+ 'TITLE': 'AI - Python Developer\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38852532?Oem_Code=C1&logpath=1&stext=파이썬&listno=58'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=4>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '대전 유성구',
+ 'CARRER': '신입·경력1년↑',
+ 'COMPANY': '허브넷컴퍼니',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, Python, 인공지능(AI), 빅데이터, 데이터분석',
+ 'RECUITMENT_PERIOD': '~08/15(월)',
+ 'TITLE': '2022 DataAnalysis, (Python/JAVA/SAS) 정규직 채용\r\n'
+          '                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38762359?Oem_Code=C1&logpath=1&stext=파이썬&listno=80'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=5>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 구로구',
+ 'CARRER': '경력',
+ 'COMPANY': '더조은컴퓨터학원',
+ 'EMPLOYMENT_TYPE': '계약직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '디자인학원, IT학원, 프로그램강의, Python, 빅데이터, 머신러닝(ML), R, 데이터분석, '
+                   '컴퓨터학원강사, 직업훈련교사',
+ 'RECUITMENT_PERIOD': '~09/06(화)',
+ 'TITLE': '[더조은컴퓨터학원 구로캠퍼스] ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38660252?Oem_Code=C1&logpath=1&stext=파이썬&listno=100'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '대졸↑',
+ 'AREA': '서울 영등포구',
+ 'CARRER': '경력3년↑',
+ 'COMPANY': '효성ITX㈜',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': '소프트웨어개발, 솔루션, BigData, SI, SM, C#, C++, Java, Python, '
+                   'Python, 인공지능(AI), 딥러닝, 자연어처리(NLP)',
+ 'RECUITMENT_PERIOD': '~08/23(화)',
+ 'TITLE': '[효성ITX] 웹개발/웹솔루션 및 ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38843127?Oem_Code=C1&logpath=1&stext=파이썬&listno=59'}
+2022-07-08 01:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jobkorea.co.kr/Search/?stext=%ED%8C%8C%EC%9D%B4%EC%8D%AC&recruit&Page_No=3>
+{'ACADEMIC_ABILILTY': '학력무관',
+ 'AREA': '서울 금천구 외',
+ 'CARRER': '경력1년↑',
+ 'COMPANY': '코리아센터',
+ 'EMPLOYMENT_TYPE': '정규직',
+ 'HOMEPAGE': 'jobkorea',
+ 'OTHER_CONTENTS': 'django, 쇼핑몰, 전자상거래, 웹프로그래머, Python, API, Python, Python',
+ 'RECUITMENT_PERIOD': '~09/22(목)',
+ 'TITLE': '[유연근무] Python 개발자를 모집합니다\r\n                            ',
+ 'URL': 'https://www.jobkorea.co.kr/Recruit/GI_Read/38842739?Oem_Code=C1&logpath=1&stext=파이썬&listno=60'}
+2022-07-08 01:10:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-07-08 01:10:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1108,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 116786,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 2.729821,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2022, 6, 30, 11, 27, 18, 631810),
- 'httpcompression/response_bytes': 475017,
- 'httpcompression/response_count': 2,
- 'item_scraped_count': 32,
- 'log_count/DEBUG': 39,
- 'log_count/ERROR': 8,
+ 'finish_time': datetime.datetime(2022, 7, 7, 16, 10, 18, 941532),
+ 'httpcompression/response_bytes': 919515,
+ 'httpcompression/response_count': 4,
+ 'item_scraped_count': 65,
+ 'log_count/DEBUG': 74,
+ 'log_count/ERROR': 15,
  'log_count/INFO': 10,
- 'response_received_count': 2,
- 'scheduler/dequeued': 2,
- 'scheduler/dequeued/memory': 2,
- 'scheduler/enqueued': 2,
- 'scheduler/enqueued/memory': 2,
- 'start_time': datetime.datetime(2022, 6, 30, 11, 27, 2, 479440)}
-2022-06-30 20:27:18 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2022, 7, 7, 16, 10, 16, 211711)}
+2022-07-08 01:10:18 [scrapy.core.engine] INFO: Spider closed (finished)

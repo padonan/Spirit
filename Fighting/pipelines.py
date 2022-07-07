@@ -16,8 +16,8 @@ class FightingPipeline(object):
         try:
             self.conn = pymysql.connect(
                 user = "root",
-                password = '12345678',
-                host = 'reset.cph9j6ogf7eh.us-west-1.rds.amazonaws.com',
+                password = 'Fpdlswj82',
+                host = 'cldb.c838wggzqfla.ap-northeast-2.rds.amazonaws.com',
                 port = 3306,
                 db = "CLDB",
                 charset = "utf8"
@@ -29,8 +29,8 @@ class FightingPipeline(object):
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
-        sql = "INSERT INTO data (COMPANY, TITLE, career, ACADEMIC, EMPLOYMENT, AREA, PERIOD, etc, URL) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
-        self.cursor.execute(sql, ( (item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')),(item['URL'].encode('utf-8')) ))
+        sql = "INSERT INTO DB (homepage, COMPANY, TITLE, career, ACADEMIC, EMPLOYMENT, AREA, PERIOD, URL, etc) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+        self.cursor.execute(sql, ( (item['HOMEPAGE'].encode('utf-8')),(item['COMPANY'].encode('utf-8')), (item['TITLE'].encode('utf-8')), (item['CARRER'].encode('utf-8')), (item['ACADEMIC_ABILILTY'].encode('utf-8')), (item['EMPLOYMENT_TYPE'].encode('utf-8')), (item['AREA'].encode('utf-8')), (item['RECUITMENT_PERIOD'].encode('utf-8')),(item['URL'].encode('utf-8')), (item['OTHER_CONTENTS'].encode('utf-8')) ))
         self.conn.commit()
         print("DB inserted")
         return item
