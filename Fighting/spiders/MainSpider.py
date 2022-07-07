@@ -8,6 +8,7 @@ INPUTKEYWORD = ''.join(KEYWORD)
 
 JOBKOREA_URL = 'https://www.jobkorea.co.kr/Search/?stext=' + INPUTKEYWORD +'&recruit&Page_No=%s'
 SARAMIN_URL = 'https://www.saramin.co.kr/zf_user/search?searchType=search&searchword=' + INPUTKEYWORD + '&recruitPage=%s'
+CAREER_URL = 'https://search.career.co.kr/jobs?kw=' + INPUTKEYWORD  + '&recruit&Page=%s'
 start_page = 0
 
 
@@ -15,10 +16,12 @@ class MainSpider(scrapy.Spider):
     name = 'MainSpider'
 
     def start_requests(self):
-        for i in range(1, 10, 1): # 0, 1
-            yield Request(url=JOBKOREA_URL % (i + start_page), callback=self.jobkorea_parse) # 콜백 함수를 이용해 페이지별로 크롤링
-        for i in range(1, 10, 1):
+        for i in range(1, 5, 1): # 0, 1
+            yield Request(url=JOBKOREA_URL % (i + start_page), callback=self.jobkorea_parse)
+        for i in range(1, 5, 1):
             yield Request(url=SARAMIN_URL % (i + start_page), callback=self.saramin_parse)
+        for i in range(1, 5, 1):
+            yield Request(url=CAREER_URL % (i + start_page), callback=self.career_parse)
 
 
     def jobkorea_parse(self, response):
@@ -62,8 +65,11 @@ class MainSpider(scrapy.Spider):
             for y in range(1, 40, 1):
 
                 HOMEPAGE = 'saramin'
+
+                COMPANY = response.xpath(f'//*[@id="recruit_info_list"]/div[1]/div[{y}]/div[2]/strong/a/text()')[0].extract().lstrip()
+                if COMPANY is not None:
+                    item['COMPANY'] = COMPANY
              
-                item['COMPANY'] = response.xpath(f'//*[@id="recruit_info_list"]/div[1]/div[{y}]/div[2]/strong/a/text()')[0].extract().lstrip()
                 item['TITLE'] = response.xpath(f'//*[@id="recruit_info_list"]/div[1]/div[{y}]/div[1]/h2/a/span/text()')[0].extract()
 
                 CARRER = response.xpath(f'//*[@id="recruit_info_list"]/div[1]/div[{y}]/div[1]/div[3]/span[2]/text()')[0].extract()
@@ -102,6 +108,31 @@ class MainSpider(scrapy.Spider):
                     HOMEPAGE = None
                 
                 item['HOMEPAGE'] = HOMEPAGE  
+
+                yield item
+                
+    def career_parse(self, response):
+            item = FightingItem()
+
+            for y in range(1, 11, 1):
+
+                HOMEPAGE = 'career'
+
+                item['COMPANY'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[1]/div/div/div/a[1]/text()')[0].extract()
+                item['TITLE'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[1]/a[1]/text()')[0].extract()
+                item['CARRER'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[2]/span[2]/text()')[0].extract()
+                item['ACADEMIC_ABILILTY'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[2]/span[3]/text()')[0].extract()
+                item['EMPLOYMENT_TYPE'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[2]/span[4]/text()')[0].extract()
+                item['AREA'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[2]/span[1]/text()')[0].extract()
+                item['RECUITMENT_PERIOD'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[3]/div[1]/span/text()')[0].extract()
+                item['OTHER_CONTENTS'] = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[3]/div/text()')[0].extract()
+                
+                URL = response.xpath(f'//*[@id="container"]/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/table/tbody/tr[{y}]/td[2]/div/div/div[1]/a[1]/@href')[0].extract()
+                if URL == None:
+                    HOMEPAGE = None
+
+                item['URL'] = URL
+                item['HOMEPAGE'] = HOMEPAGE
 
                 yield item
 
