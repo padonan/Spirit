@@ -41,32 +41,18 @@ scrapy 에서 DB에 접속은 되는데 insert가 안됨.. 해결예정
 
 <br/>
 
-## **1. Scrapy 설치하기**
+## **1. Scrapy 설치**
 
 <br/>
-
-터미널을 열어 Scrapy 설치를 진행한다. 설치를 진행하기 전 Linux에서 pip를 최신버전으로 업데이트를 진행해주자
-
-
-```
-# pip 업그레이드
-
-pip install --upgrade pip
-
-# Scrapy 설치
 
 pip install scrapy
 
-# Scrapy 버전확인
 
-scrapy version
-```
-
-## **2. Scrapy 실행하기**
+## **2. Scrapy 실행**
 
 <br/>
 
-spider 파일실행 =  터미널에서 **scrapy crawl [스파이더 이름]** 명령어로 실행시킬 수 있다
+scrapy crawl [스파이더 이름]
 
 <br/>
 
@@ -76,11 +62,10 @@ scrapy crawl MainSpider
 
 <br/>
 
-## **3. 크롤링 데이터 CSV 파일에 저장하기**
+## **3. CSV 파일로 저장**
 
 <br/>
-
-크롤링한 데이터를 CSV파일에 저장시키려면 scrapy를 실행할 때 **-o [csv 파일 명].csv**을 추가 해서 실행시키자 그럼 실행 값들이 csv파일로 저장이 된다.
+-o [csv 파일 명].csv을 추가
 
 <br/>
 
