@@ -37,7 +37,7 @@ class FightingPipeline(object):
 
 
 
-
+# pymysql을 이용한 DB 인서트 item의 필드를 받아온다
 
 
 
