@@ -47,6 +47,8 @@ scrapy 에서 DB에 접속은 되는데 insert가 안됨.. 해결예정
 
 pip install scrapy
 
+<br/>
+
 
 ## **2. Scrapy 실행**
 
@@ -64,8 +66,8 @@ scrapy crawl MainSpider
 
 ## **3. CSV 파일로 저장**
 
-<br/>
 -o [csv 파일 명].csv을 추가
+
 
 <br/>
 
