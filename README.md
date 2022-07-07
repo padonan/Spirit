@@ -76,7 +76,7 @@ scrapy crawl MainSpider
 
 <br/>
 
-## **7. LOG파일 생성하기**
+## **2. LOG파일 생성하기**
 
 <br/>
 
@@ -96,7 +96,7 @@ scrapy crawl MainSpider --nolog
 
 <br/>
 
-## **8. 크롤링 데이터 CSV 파일에 저장하기**
+## **3. 크롤링 데이터 CSV 파일에 저장하기**
 
 <br/>
 
