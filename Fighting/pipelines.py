@@ -37,7 +37,7 @@ class FightingPipeline(object):
 
 
 
-# pymysql을 이용한 DB커넥트 및 인서트, items의 변수들을 받아온다
+# pymysql을 이용한 aws서버내의 DB커넥트 및 인서트, items의 변수들을 받아온다
 
 
 
