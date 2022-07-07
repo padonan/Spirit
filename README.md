@@ -76,27 +76,7 @@ scrapy crawl MainSpider
 
 <br/>
 
-## **3. LOG파일 생성하기**
-
-<br/>
-
-scrapy를 실행시킨다면 실행창에 log가 주르륵 나올거다. 이 로그들을 실행시킬 때 터미널에서 보이지 않고 하나의 파일안에 쌓이도록 하기 위해 log 파일을 생성하자. settings 파일안으로 들어가 **LOG_FILE = '[로그 파일 명].log'**를 추가하자 그럼 scrapy를 실행 시킬 때 로그들이 해당 파일에 저장이 된다. 만약 log파일 없이 log를 없애고 싶다면 scrapy 실행을 시킬 때  **--nolog** 를 붙여 실행하면 log 파일 생성 없이 log가 나오지 않는다
-
-<br/>
-
-```
-#로그파일 생성
-
-LOG_FILE = 'MainSpider.log'
-
-#로그파일 생성없이 로그 없애기
-
-scrapy crawl MainSpider --nolog
-```
-
-<br/>
-
-## **4. 크롤링 데이터 CSV 파일에 저장하기**
+## **3. 크롤링 데이터 CSV 파일에 저장하기**
 
 <br/>
 
