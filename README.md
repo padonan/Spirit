@@ -115,8 +115,10 @@ scrapy crawl MainSpider -o [csv 파일 명].csv --nolog
 
 <br/>
 
-## **참고**
+## **참고한 사이트**
 
 <br/>
 
 [Xpath 사용방법](https://nittaku.tistory.com/136)
+
+[Xpath 문법] (https://www.fun-coding.org/crawl_advance5.html)
