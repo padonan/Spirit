@@ -137,4 +137,4 @@ class MainSpider(scrapy.Spider):
                 yield item
 
 
-# 잡코리아 크롤링 끝
+# 잡코리아, 사람인, 커리어 사이트 크롤링 끝
