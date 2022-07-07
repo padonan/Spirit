@@ -115,14 +115,8 @@ scrapy crawl MainSpider -o [csv 파일 명].csv --nolog
 
 <br/>
 
-## **참고하면 좋은 사이트**
+## **참고**
 
 <br/>
-
-[크롤링 방법 1](https://excelsior-cjh.tistory.com/entry/04-Scrapy%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%89%B4%EC%8A%A4%ED%81%AC%EB%A1%A4%EB%A7%81-%ED%95%98%EA%B8%B0)
-
-[크롤링 방법 2](https://www.hanumoka.net/2020/07/07/python-20200707-python-scrapy-example/)
-
-[크롤링 방법 3](https://pycoding.tistory.com/entry/scrapy%EC%8A%A4%ED%81%AC%EB%9E%98%ED%94%BC-%ED%81%AC%EB%A1%A4%EB%A7%81-%EC%8B%A4%EC%A0%84-csv-%EC%A0%80%EC%9E%A5%EA%B9%8C%EC%A7%80)
 
 [Xpath 사용방법](https://nittaku.tistory.com/136)
