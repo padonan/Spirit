@@ -91,3 +91,5 @@ scrapy crawl MainSpider -o [csv 파일명].csv --nolog
 [Xpath 사용방법](https://nittaku.tistory.com/136)
 
 [Xpath 문법](https://www.fun-coding.org/crawl_advance5.html)
+
+[DB insert] (https://velog.io/@new_wisdom/Python-Mysql-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-insert)
