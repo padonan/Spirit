@@ -121,4 +121,6 @@ scrapy crawl MainSpider -o [csv 파일 명].csv --nolog
 
 [Xpath 사용방법](https://nittaku.tistory.com/136)
 
-[Xpath 문법] (https://www.fun-coding.org/crawl_advance5.html)
+[Xpath 문법](https://www.fun-coding.org/crawl_advance5.html)
+
+[개발환경셋팅](https://truelifer.medium.com/scrapy-%EA%B8%B0%EB%B0%98-daum-news-crawler-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-e8b93f8e519d)
