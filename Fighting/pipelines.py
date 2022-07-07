@@ -16,7 +16,7 @@ class FightingPipeline(object):
         try:
             self.conn = pymysql.connect(
                 user = "root",
-                password = 'Fpdlswj82',
+                password = '',
                 host = 'cldb.c838wggzqfla.ap-northeast-2.rds.amazonaws.com',
                 port = 3306,
                 db = "CLDB",
