@@ -37,7 +37,7 @@ scrapy 에서 DB에 접속은 되는데 insert가 안됨.. 해결예정
 
 
 
-# **Scrapy 사용법**
+# **Scrapy 실행방법**
 
 <br/>
 
