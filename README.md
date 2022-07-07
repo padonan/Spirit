@@ -66,17 +66,17 @@ scrapy crawl MainSpider
 
 ## **3. CSV 파일로 저장**
 
--o [csv 파일 명].csv을 추가
+-o [csv 파일명].csv을 추가
 
 
 <br/>
 
 ```
-scrapy crawl MainSpider -o [csv 파일 명].csv 
+scrapy crawl MainSpider -o [csv 파일명].csv 
 
 #csv 파일 저장 + --nolog
 
-scrapy crawl MainSpider -o [csv 파일 명].csv --nolog
+scrapy crawl MainSpider -o [csv 파일명].csv --nolog
 
 ```
 
