@@ -41,7 +41,7 @@ scrapy 에서 DB에 접속은 되는데 insert가 안됨.. 해결예정
 
 <br/>
 
-## **Scrapy 설치하기**
+## **1. Scrapy 설치하기**
 
 <br/>
 
@@ -62,7 +62,7 @@ pip install scrapy
 scrapy version
 ```
 
-## **1. Scrapy 실행하기**
+## **2. Scrapy 실행하기**
 
 <br/>
 
@@ -76,7 +76,7 @@ scrapy crawl MainSpider
 
 <br/>
 
-## **2. LOG파일 생성하기**
+## **3. LOG파일 생성하기**
 
 <br/>
 
@@ -96,7 +96,7 @@ scrapy crawl MainSpider --nolog
 
 <br/>
 
-## **3. 크롤링 데이터 CSV 파일에 저장하기**
+## **4. 크롤링 데이터 CSV 파일에 저장하기**
 
 <br/>
 
