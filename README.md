@@ -105,11 +105,11 @@ scrapy crawl MainSpider --nolog
 <br/>
 
 ```
-scrapy crawl gmarket -o [csv 파일 명].csv 
+scrapy crawl MainSpider -o [csv 파일 명].csv 
 
 #csv 파일 저장 + --nolog
 
-scrapy crawl gmarket -o [csv 파일 명].csv --nolog
+scrapy crawl MainSpider -o [csv 파일 명].csv --nolog
 
 ```
 
